@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.woff2') format('woff2');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: greenyellow;
+    background: url("../img/mario.gif") center no-repeat fixed;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Gotham-Bold", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p {
+    font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgba(36, 16, 34, 0.486);
+    backdrop-filter: blur(20px);
+}
+
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#image .logo img {
+    width: 250px;
+}
+
+#image .joemer img {
+    width: 250px;
+    border-radius: 25px;
+}
+
+#info {
+    text-align: center;
+}
+
+#info .links a {
+padding: 20px;
+font-size: 34px;
+color: rgb(255, 255, 255);
+}
